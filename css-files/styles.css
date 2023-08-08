@@ -1,9 +1,11 @@
 body {
-   
+   text-align: center;
    background-color: white; 
 }
+
 ul {
-   list-style: none;
+   list-style: circle; 
+   list-style-position: inside;
 }
 
 img {
@@ -14,3 +16,4 @@ h1 {
    color: darkred;
 
 }
+
