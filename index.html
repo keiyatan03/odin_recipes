@@ -3,20 +3,122 @@
 
 <head>
 <meta chatset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Odin Recipes</title>
-<link rel="stylesheet" href="css-files/styles.css">
+<link rel="stylesheet" href="index.css">
 </head>
 
 <body>
+    <!-- My first try making a recipe card.
+     the codes are not that clean and efficient -->
+    <div class="container1">
+    <div class="header"><h1>Odin Recipes</h1></div>
+    <div class="img"><img src="/home/keiya/repos/odin_recipes/img/cartoon-chef.png" width="800" height="300" alt="chef cartoon character"></div>
+</div>
+
+<div class="container2">
+
+    <div class="side-image">
+        <img class="image2" src="https://www.allrecipes.com/thmb/EwjgIQOTREUPmDPhO5uvs23iF_o=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/7557506_Bacon-Egg-and-Cheese-Sandwich_Thedailygourmet_4x3-96273724754c4b59985d2e5b75355f23.jpg" width="150" height="120" alt="bacon, egg and cheese sandwich">
+    </div>
+
+    <div class="item1 b-e-c">
+        <h1 class="header1">BACON, EGG AND CHEESE SANDWICH</h1>
     
-    <h1>Odin Recipes</h1>
-    <img src="https://image.similarpng.com/very-thumbnail/2020/08/Cartoon-chef-serving-food-on-transparent-background-PNG.png" width="800" height="300" alt="chef cartoon character"><br><br>
-    <ul>
-    <li><a href="recipes/homemade-smash-burgers.html">
-        Homemade Smash Burgers</a><br></li>
-    <li><a href="recipes/bacon-egg-and-cheese-sandwich.html">Bacon, egg and cheese sandwich</a><br>
-    <li><a href="recipes/bacon-egg-and-cheese-sandwich.html">Bacon, egg and cheese sandwich</a><br></li>
-    <li><a href="recipes/double-decker-tacos.html">Double Decker Tacos</a></li>
-</ul>
+     <h4 class="header2"><em>It is made with bacon, eggs (typically fried or scrambled), cheese and bread, which may be buttered and toasted.</em></h4>
+        <p class="descrip">If you know how to make an omelet, you will be able to make this <strong>bacon, egg, and cheese breakfast sandwich.</strong> There's so little prep work required that breakfast will be done before you know it!</p>
+                <div class="recipe-info">
+
+                  <ul class="main-list">
+
+                    <li id="list-item"><h3>PREP TIME</h3>
+                    <p>5 mins</p></li>
+
+                    <li id="list-item"><h3>COOK TIME</h3>
+                      <p>15 mins</p></li>
+
+                    <li id="list-item"><h3>TOTAL TIME</h3>
+                         <p>20 mins</p></li>
+
+                      <li class="list-item"><h3>SERVINGS</h3>
+                       <p>2 persons</p></li>
+
+                    </ul>
+                
+                <a id="link1" href="/home/keiya/repos/odin_recipes/recipes/b-e-c-recipe.html">VIEW RECIPE</a>
+
+            </div>
+
+    </div>
+
+</div>
+
+<!-- new and efficient way of making a recipe card  --> 
+
+<!--I used 4 div classes for my recipe card-->
+<div class="container3"> 
+    <div class="cards">
+    <div class="image3">
+        <img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F2266070.jpg&q=60&c=sc&orient=true&poi=auto&h=512" alt="Double Decker Tacos">
+    </div>
+    <div class="card-body">
+        <h2>DOUBLE DECKER TACOS</h2>
+        <p><em>The best tacos!</em> A soft shell taco is layered with refried beans, then wrapped around a hard shell taco
+            <p>which is filled with seasoned ground beef and topped with cheese, lettuce, tomato, onion, sour cream and fresh guacamole. You can top it with whatever you like, <strong>but I recommend loading it up!</strong> Also, if you don't eat meat, put melted cheese on the soft shell, and the refried beans in the hard.</p>
+        <!--used <ul> to efficiently make short recipe info.
+            I didn't make it a <div> because i want the list at the
+                bottom of the <p>-->
+            <ul class="main-list2">
+                <li><h3>PREP TIME:</h3>
+                <p>30mins</p></li>
+                <li><h3>COOK TIME:</h3>
+                <p>15mins</p></li>
+                <li><h3>TOTAL TIME:</h3>
+                <p>45mins</p></li>
+                <li><h3>SERVINGS</h3>
+                <p>12</p></li>
+                <!-- fixed alignment problem-->
+                <li><a id="link2" href="/home/keiya/repos/odin_recipes/recipes/double-decker-tacos.html">VIEW RECIPE</a></li>
+
+            </ul>
+
+            
+    </div>
+    
+  </div>
+</div>
+
+
+<div class="container3"> 
+    <div class="cards">
+    <div class="image3">
+        <img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F43%2F2022%2F10%2F13%2FSmash-Burgers-2000.jpg&q=60&c=sc&orient=true&poi=auto&h=512">
+    </div>
+
+    <div class="card-body">
+        <h2>Homemade Smash Burgers</h2>
+        <p><em>This smash burger recipe makes super juicy burgers with crispy edges.</em></p>
+        <p><strong>Don't use meat that is leaner than 80/20</strong> for best results, and make sure the meat is very cold. I prefer to cook these outdoors to avoid smoking up the kitchen. These grill up very fast because of the high heat, so make sure you have everything ready to go!</p>
+        
+            <ul class="main-list2">
+                <li><h3>PREP TIME:</h3>
+                <p>15mins</p></li>
+                <li><h3>COOK TIME:</h3>
+                <p>5mins</p></li>
+                <li><h3>TOTAL TIME:</h3>
+                <p>20mins</p></li>
+                <li><h3>SERVINGS</h3>
+                <p>4</p></li>
+                <!-- fixed alignment problem-->
+                <li><a id="link2" href="/home/keiya/repos/odin_recipes/recipes/homemade-smash-burgers.html">VIEW RECIPE</a></li>
+
+            </ul>
+
+            
+    </div>
+    
+  </div>
+</div>
+    
 </body>
 </html>
