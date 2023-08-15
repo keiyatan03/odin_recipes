@@ -25,6 +25,7 @@ make a space between them */
 to make it look decent */
 .box .box1 { 
     text-align: center;
+    width: 600px;
 }
 /* made the <ul> inline-block and align it to the left
 so that the text of the list will be straight vertically */
@@ -41,7 +42,7 @@ the box */
     flex-direction: column;
     text-align: center;
     flex-wrap: wrap;
-    width: 700px;
+    width: 600px;
 }
 
 /* made the list inline-block and align it to the left
@@ -55,3 +56,7 @@ so that the text will align straightly left */
     line-height: 2;
 }
 
+.box .box1 .main-list {
+    columns: 2;
+    margin-left: 50px;
+}

@@ -4,12 +4,15 @@
     padding: 0;
     box-sizing: border-box;
 
-
 }
 
 /* made it flex (row) to separate into two, wrap it
 to contain it in the box and used space around to
 make a space between them */
+body {
+     padding-bottom: 40px;
+}
+/* made it flex(row) to split the box1 and boxes into two */
 .box {
     display: flex;
     flex-direction: row;
@@ -25,6 +28,8 @@ make a space between them */
 to make it look decent */
 .box .box1 { 
     text-align: center;
+
+
 }
 /* made the <ul> inline-block and align it to the left
 so that the text of the list will be straight vertically */
@@ -41,7 +46,6 @@ the box */
     flex-direction: column;
     text-align: center;
     flex-wrap: wrap;
-    width: 700px;
 }
 
 /* made the list inline-block and align it to the left
@@ -52,6 +56,13 @@ so that the text will align straightly left */
 }
 
 .box2 li {
-    line-height: 2;
+    line-height: 1.5;
 }
-
+/* made it flex(colums) and adjust the width to fit directions
+and tips to the right side of the page and make the page look decent */
+.box .boxes {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 600px;
+}
